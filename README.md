@@ -1,9 +1,9 @@
-# Sponsorname - Mitigation Review details
-- Total Prize Pool: XXX XXX 
+# Asymmetry Finance afETH - Mitigation Review details
+- Total Prize Pool: $7,150 USDC 
 - [Warden guidelines for C4 mitigation reviews](https://code4rena.notion.site/Guidelines-for-C4-mitigation-reviews-ed10fc5cfbf640bd8dcec66f38b343c4)
-- Submit findings [using the C4 form](https://code4rena.com/contests/YYYY-MM-sponsorName-mitigation-review/submit)
-- Starts TBD XXX XXX XX 20:00 UTC (ex. `Starts March 22, 2023 20:00 UTC`)
-- Ends TBD XXX XXX XX 20:00 UTC (ex. `Ends March 30, 2023 20:00 UTC`)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-10-asymmetry-finance-afeth-mitigation-review/submit)
+- Starts October 18, 2023 20:00 UTC 
+- Ends October 23, 2023 20:00 UTC 
 
 ## Important note 
 
@@ -13,7 +13,22 @@ Each warden must submit a mitigation review for *every High and Medium finding* 
 
 Mitigations of all High and Medium issues will be considered in-scope and listed here.
 
-- [H-01: Title](link to Github issue)
+- [H-01: Intrinsic arbitrage from price discrepancy](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/62)
+- [H-02: Zero amount withdrawals of SafEth or Votium will brick the withdraw process](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/36)
+- [H-03: AfEth deposits could use price data from an invalid Chainlink response](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/34)
+- [H-04: price() in AfEth.sol doesn't take afEth held for pending withdrawals into account](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/25)
+- [H-05: Functions in the VotiumStrategy contract are susceptible to sandwich attacks](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/23)
+- [M-01: AfEth collaterals cannot be balanced after ratio is changed](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/55)
+- [M-02: Swap functionality to sell rewards is too permissive and could cause accidental or intentional loss of value](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/54)
+- [M-03: Forced relock in VotiumStrategy withdrawal causes denial of service if Convex locking contract is shutdown](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/50)
+- [M-04: VotiumStrategy withdrawal queue fails to consider available unlocked tokens causing different issues in the withdraw process](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/49)
+- [M-05: Reward sandwiching in VotiumStrategy](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/45)
+- [M-06: Missing deadline check for AfEth actions](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/43)
+- [M-07: Lack of access control and value validation in the reward flow exposes functions to public access](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/38)
+- [M-08: Inflation attack in VotiumStrategy](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/35)
+- [M-09: Missing circuit breaker checks in ethPerCvx() for Chainlink's price feed](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/31)
+- [M-10: It might not be possible to applyRewards(), if an amount received is less than 0.05 eth](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/16)
+
 
 [ ⭐️ SPONSORS ADD INFO HERE ]
 
