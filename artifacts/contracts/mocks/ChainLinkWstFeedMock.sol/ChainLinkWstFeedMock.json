@@ -1,0 +1,49 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ChainLinkWstFeedMock",
+  "sourceName": "contracts/mocks/ChainLinkWstFeedMock.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "latestRoundData",
+      "outputs": [
+        {
+          "internalType": "uint80",
+          "name": "",
+          "type": "uint80"
+        },
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint80",
+          "name": "",
+          "type": "uint80"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b5060a08061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063feaf968c14602d575b600080fd5b60408051680100000000000000328152670ddbbe53e965740060208201526000818301819052426060830152608082015290519081900360a00190f3fea26469706673582212208c0267ece9b4b4a5bea407ebe0c0570cd6f699e91fd5c57dd70207892add053364736f6c63430008130033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063feaf968c14602d575b600080fd5b60408051680100000000000000328152670ddbbe53e965740060208201526000818301819052426060830152608082015290519081900360a00190f3fea26469706673582212208c0267ece9b4b4a5bea407ebe0c0570cd6f699e91fd5c57dd70207892add053364736f6c63430008130033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
