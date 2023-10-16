@@ -29,9 +29,6 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 - [M-09: Missing circuit breaker checks in ethPerCvx() for Chainlink's price feed](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/31)
 - [M-10: It might not be possible to applyRewards(), if an amount received is less than 0.05 eth](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/16)
 
-
-[ ⭐️ SPONSORS ADD INFO HERE ]
-
 ## Overview of changes
 
 Most of the changes felt relatively straight forward.  The biggest change we did was not burning afEth on withdraw, instead we now burn it on requestWithdraw.  This is mostly in regards to H-04, but would like to have extra care taken around that to make sure nothing is broken.
