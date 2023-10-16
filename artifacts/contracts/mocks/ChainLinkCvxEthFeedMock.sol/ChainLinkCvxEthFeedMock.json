@@ -1,0 +1,49 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "ChainLinkCvxEthFeedMock",
+  "sourceName": "contracts/mocks/ChainLinkCvxEthFeedMock.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "latestRoundData",
+      "outputs": [
+        {
+          "internalType": "uint80",
+          "name": "",
+          "type": "uint80"
+        },
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint80",
+          "name": "",
+          "type": "uint80"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50609f8061001e6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063feaf968c14602d575b600080fd5b60408051680100000000000000328152660606eccce6562860208201526000818301819052426060830152608082015290519081900360a00190f3fea2646970667358221220b2c0b749ccce30335074611741b2ddd0c960c995148a914e3b064ac335f2a61064736f6c63430008130033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c8063feaf968c14602d575b600080fd5b60408051680100000000000000328152660606eccce6562860208201526000818301819052426060830152608082015290519081900360a00190f3fea2646970667358221220b2c0b749ccce30335074611741b2ddd0c960c995148a914e3b064ac335f2a61064736f6c63430008130033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
