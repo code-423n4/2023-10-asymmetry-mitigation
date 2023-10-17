@@ -48,15 +48,12 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 | https://github.com/asymmetryfinance/afeth/pull/165 | H-03 | Validate Chainlink price data |
 | https://github.com/asymmetryfinance/afeth/pull/162 & https://github.com/asymmetryfinance/afeth/pull/172 | H-04 | For this one we made afEth just burn on requestWithdraw |
 | https://github.com/asymmetryfinance/afeth/pull/176 & https://github.com/asymmetryfinance/afeth/pull/178 & https://github.com/asymmetryfinance/afeth/pull/169 | H-05 | For this one we locked down the depositRewards function and added a minout to the reward functions  |
-| https://github.com/code-423n4/2023-09-asymmetry-findings/issues/55 | M-01 | Acknowledged and did not fix, plan to upgrade a fix in the future |
-| https://github.com/code-423n4/2023-09-asymmetry-findings/issues/54 | M-02 | Did not fix, should have been marked acknowledged |
 | https://github.com/asymmetryfinance/afeth/pull/164 | M-03 | Check if vlcvx contract is shutdown before trying to relock |
 | https://github.com/asymmetryfinance/afeth/pull/168 | M-04 | Check if available amount to withdraw is already in contract  |
 | https://github.com/asymmetryfinance/afeth/pull/168 | M-05 | Add a minimum epoch of 1 to not allow users to immediately withdraw |
 | https://github.com/asymmetryfinance/afeth/pull/175 | M-06 | Add a deadline check for deposit & withdraw |
 | https://github.com/asymmetryfinance/afeth/pull/193 & https://github.com/asymmetryfinance/afeth/pull/190 | M-07 | Here we did two things, check msg.value instead of passing in amount & make deposit rewards private |
 | https://github.com/asymmetryfinance/afeth/pull/179 | M-08 | Track balances instead of using balanceOf |
-| https://github.com/code-423n4/2023-09-asymmetry-findings/issues/31 | M-09 | Didn't fix, should have been marked acknowledged |
 | https://github.com/code-423n4/2023-09-asymmetry-findings/issues/16 | M-10 | No code changes needed, we removed the minimum stake amount from SafEth |
 
 
@@ -65,3 +62,8 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 ## Out of Scope
 
 Please list any High and Medium issues that were judged as valid but you have chosen not to fix.
+| URL | Mitigation of | Purpose | 
+| ----------- | ------------- | ----------- |
+| https://github.com/code-423n4/2023-09-asymmetry-findings/issues/55 | M-01 | Acknowledged and did not fix, plan to upgrade a fix in the future |
+| https://github.com/code-423n4/2023-09-asymmetry-findings/issues/54 | M-02 | Did not fix, should have been marked acknowledged |
+| https://github.com/code-423n4/2023-09-asymmetry-findings/issues/31 | M-09 | Didn't fix, should have been marked acknowledged |
