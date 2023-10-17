@@ -61,7 +61,6 @@ Wherever possible, mitigations should be provided in separate pull requests, one
 
 ## Out of Scope
 
-Please list any High and Medium issues that were judged as valid but you have chosen not to fix.
 | URL | Mitigation of | Purpose | 
 | ----------- | ------------- | ----------- |
 | https://github.com/code-423n4/2023-09-asymmetry-findings/issues/55 | M-01 | Acknowledged and did not fix, plan to upgrade a fix in the future |
