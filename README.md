@@ -29,26 +29,38 @@ Mitigations of all High and Medium issues will be considered in-scope and listed
 - [M-09: Missing circuit breaker checks in ethPerCvx() for Chainlink's price feed](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/31)
 - [M-10: It might not be possible to applyRewards(), if an amount received is less than 0.05 eth](https://github.com/code-423n4/2023-09-asymmetry-findings/issues/16)
 
-
-[ ⭐️ SPONSORS ADD INFO HERE ]
-
 ## Overview of changes
 
-Please provide context about the mitigations that were applied if applicable and identify any areas of specific concern.
+Most of the changes felt relatively straight forward.  The biggest change we did was not burning afEth on withdraw, instead we now burn it on requestWithdraw.  This is mostly in regards to H-04, but would like to have extra care taken around that to make sure nothing is broken.
 
 ## Mitigations to be reviewed
 
 ### Branch
-[ ⭐️ SPONSORS ADD A LINK TO THE BRANCH IN YOUR REPO CONTAINING ALL PRS ]
+[All audit mitigations](https://github.com/asymmetryfinance/afeth/pull/167)
 
 ### Individual PRs
-[ ⭐️ SPONSORS ADD ALL RELEVANT PRs TO THE TABLE BELOW:]
-
 Wherever possible, mitigations should be provided in separate pull requests, one per issue. If that is not possible (e.g. because several audit findings stem from the same core problem), then please link the PR to all relevant issues in your findings repo. 
 
 | URL | Mitigation of | Purpose | 
 | ----------- | ------------- | ----------- |
-| https://github.com/your-repo/sample-contracts/pull/XXX | H-01 | This mitigation does XYZ | 
+| https://github.com/code-423n4/2023-09-asymmetry-findings/issues/62 | H-01 | After days of research we decided that this was acceptable.  Check the link to view our response. | 
+| https://github.com/asymmetryfinance/afeth/pull/159 | H-02 | Don't withdraw zero from SafEth or Votium |
+| https://github.com/asymmetryfinance/afeth/pull/165 | H-03 | Validate Chainlink price data |
+| https://github.com/asymmetryfinance/afeth/pull/162 & https://github.com/asymmetryfinance/afeth/pull/172 | H-04 | For this one we made afEth just burn on requestWithdraw |
+| https://github.com/asymmetryfinance/afeth/pull/176 & https://github.com/asymmetryfinance/afeth/pull/178 & https://github.com/asymmetryfinance/afeth/pull/169 | H-05 | For this one we locked down the depositRewards function and added a minout to the reward functions  |
+| https://github.com/code-423n4/2023-09-asymmetry-findings/issues/55 | M-01 | Acknowledged and did not fix, plan to upgrade a fix in the future |
+| https://github.com/code-423n4/2023-09-asymmetry-findings/issues/54 | M-02 | Did not fix, should have been marked acknowledged |
+| https://github.com/asymmetryfinance/afeth/pull/164 | M-03 | Check if vlcvx contract is shutdown before trying to relock |
+| https://github.com/asymmetryfinance/afeth/pull/168 | M-04 | Check if available amount to withdraw is already in contract  |
+| https://github.com/asymmetryfinance/afeth/pull/168 | M-05 | Add a minimum epoch of 1 to not allow users to immediately withdraw |
+| https://github.com/asymmetryfinance/afeth/pull/175 | M-06 | Add a deadline check for deposit & withdraw |
+| https://github.com/asymmetryfinance/afeth/pull/193 & https://github.com/asymmetryfinance/afeth/pull/190 | M-07 | Here we did two things, check msg.value instead of passing in amount & make deposit rewards private |
+| https://github.com/asymmetryfinance/afeth/pull/179 | M-08 | Track balances instead of using balanceOf |
+| https://github.com/code-423n4/2023-09-asymmetry-findings/issues/31 | M-09 | Didn't fix, should have been marked acknowledged |
+| https://github.com/code-423n4/2023-09-asymmetry-findings/issues/16 | M-10 | No code changes needed, we removed the minimum stake amount from SafEth |
+
+
+
 
 ## Out of Scope
 
