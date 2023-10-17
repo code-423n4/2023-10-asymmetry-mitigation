@@ -2,8 +2,8 @@
 - Total Prize Pool: $7,150 USDC 
 - [Warden guidelines for C4 mitigation reviews](https://code4rena.notion.site/Guidelines-for-C4-mitigation-reviews-ed10fc5cfbf640bd8dcec66f38b343c4)
 - Submit findings [using the C4 form](https://code4rena.com/contests/2023-10-asymmetry-finance-afeth-mitigation-review/submit)
-- Starts October 18, 2023 20:00 UTC 
-- Ends October 23, 2023 20:00 UTC 
+- Starts October 20, 2023 20:00 UTC 
+- Ends October 25, 2023 20:00 UTC 
 
 ## Important note 
 
